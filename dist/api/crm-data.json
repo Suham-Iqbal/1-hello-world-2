@@ -1,0 +1,127 @@
+{
+  "metrics": {
+    "newLeadsThisWeek": 18,
+    "conversionRate": 24,
+    "dealsWonThisMonth": 6,
+    "totalRevenue": 42500
+  },
+  "leads": [
+    {
+      "id": 1,
+      "name": "Mike Johnson",
+      "email": "mike.johnson@techcorp.com",
+      "company": "TechCorp",
+      "status": "Contacted",
+      "value": 15000,
+      "source": "Website",
+      "createdAt": "2024-08-16T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Williams",
+      "email": "sarah.w@innovate.io",
+      "company": "Innovate Solutions",
+      "status": "Qualified",
+      "value": 8500,
+      "source": "LinkedIn",
+      "createdAt": "2024-08-15T14:20:00Z"
+    },
+    {
+      "id": 3,
+      "name": "David Chen",
+      "email": "d.chen@startupxyz.com",
+      "company": "StartupXYZ",
+      "status": "New",
+      "value": 12000,
+      "source": "Referral",
+      "createdAt": "2024-08-18T09:15:00Z"
+    }
+  ],
+  "deals": [
+    {
+      "id": 1,
+      "title": "Enterprise Software License",
+      "company": "Orbit Inc",
+      "value": 25000,
+      "stage": "Negotiation",
+      "probability": 80,
+      "closeDate": "2024-08-25",
+      "owner": "Sarah"
+    },
+    {
+      "id": 2,
+      "title": "Marketing Automation Platform",
+      "company": "GrowthTech",
+      "value": 18000,
+      "stage": "Proposal",
+      "probability": 60,
+      "closeDate": "2024-09-01",
+      "owner": "Sarah"
+    },
+    {
+      "id": 3,
+      "title": "Cloud Infrastructure Setup",
+      "company": "DataFlow Systems",
+      "value": 32000,
+      "stage": "Closed Won",
+      "probability": 100,
+      "closeDate": "2024-08-10",
+      "owner": "Sarah"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Follow up with Mike Johnson",
+      "description": "Send proposal for enterprise solution",
+      "dueDate": "Today",
+      "priority": "High",
+      "status": "pending",
+      "assignee": "Sarah",
+      "leadId": 1
+    },
+    {
+      "id": 2,
+      "title": "Send proposal to Acme Co.",
+      "description": "Prepare and send detailed proposal with pricing",
+      "dueDate": "Tomorrow",
+      "priority": "Medium",
+      "status": "pending",
+      "assignee": "Sarah",
+      "leadId": null
+    },
+    {
+      "id": 3,
+      "title": "Call Sarah at Nova",
+      "description": "Schedule demo call for next week",
+      "dueDate": "Fri",
+      "priority": "Medium",
+      "status": "pending",
+      "assignee": "Sarah",
+      "leadId": 2
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "type": "lead_updated",
+      "description": "Sarah updated lead Mike Johnson's status to Contacted",
+      "timestamp": "2h ago",
+      "user": "Sarah"
+    },
+    {
+      "id": 2,
+      "type": "deal_closed",
+      "description": "Deal closed: Orbit Inc – $5,000",
+      "timestamp": "4h ago",
+      "user": "Sarah"
+    },
+    {
+      "id": 3,
+      "type": "task_completed",
+      "description": "Task completed: Send onboarding docs",
+      "timestamp": "Yesterday",
+      "user": "Sarah"
+    }
+  ]
+}
